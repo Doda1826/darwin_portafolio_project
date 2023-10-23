@@ -1,70 +1,98 @@
-body{
-    display: flex;
-    background-color: rgba(240, 229, 166, 0.463); 
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    padding: 0 auto;
-    max-width: 900px;
-    margin: auto;
-    flex-direction: column;
-}
-
-nav{
-    display: flex;
+:root {
+    --wedcolor-portafolio1: #A5A9A8;
+    --wedcolor-portafolio2: #90C6DE; 
+    --wedcolor-portafolio3: #AFCCDC;
+    --wedcolor-portafolio4: #C9DEF3;
+    --wedcolor-portafolio5: #DDE9F5;
+    --letter-color: black; 
+  }
+  
+  /*colors for the website above*/
+  
+  * {
+    box-sizing: border-box; 
+  }
+  
+  body {
+    padding: 0;
+    margin: 0; 
+  }
+  
+  h1{ 
+    text-align: center; 
+    font-family: Oswald, sans-serif;
+  }
+  
+  img {
+    width: 110px; 
+  }
+  
+  #navbar {
+    width: 100%; 
+    background-color: var(--wedcolor-portafolio1); 
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    display: flex; 
+    justify-content: flex-end; 
+    position: fixed; 
+  }
+  
+  .nav-list {
+    display: flex; 
+  }
+  
+  li, a{
+    text-decoration: none;  
+    list-style: none; 
+    color: var(--letter-color);
+  }
+  
+  li {
+    margin: 10px; 
+    font-family: Nunito, sans-serif; 
+  }
+  
+  /* everything about the nav bar above*/
+  
+  #welcome-section { 
+    width: 100%;
+    height: 100vh; 
+    background-color: var(--wedcolor-portafolio2);
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
     align-items: center;
-    padding: 16px;
-}
-
-ul{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.navigation-map{
-    display: flex;
-    list-style-type: none;
-    padding: 0 auto;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    margin: 0px;
-    margin-left: auto;
-}
-
-li{
-    display: list-item;
-    text-align: center;
-}
-
-.navigation-item {
-    margin: 16px;
-}
-
-main{
-    display: block;
-}
-
-section{
-    display: block;
-    padding: 16px;
     
-}
-.welcome{
-    display: flex;
-}
-
-.welcome-container{
-    display: flex;
-}
-
-.cv_and_welcome{
-    margin-right: 16px;
-}
-
-.logo{
-    height: 300px;
-    width: 400px;
-}
-
-
+  }
+  
+  /*all about the welcome section above*/
+  
+  #projects {
+    width: 100%;
+    height: 100vh; 
+    background-color: var(--wedcolor-portafolio5);
+    padding: 0;
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+  }
+  
+  .projects-section {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem; 
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+  /*all about the project section above*/
+  
+  @media only screen and (min: 300px) {
+    img {
+    width: 110px; 
+    }
+  }

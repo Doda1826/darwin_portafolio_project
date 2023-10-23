@@ -1,33 +1,33 @@
 :root {
-    --wedcolor-portafolio1: #A5A9A8;
+    --wedcolor-portafolio1: #ffffff;
     --wedcolor-portafolio2: #90C6DE; 
-    --wedcolor-portafolio3: #AFCCDC;
+    --wedcolor-portafolio3: #004e79;
     --wedcolor-portafolio4: #C9DEF3;
     --wedcolor-portafolio5: #DDE9F5;
     --letter-color: black; 
-  }
+}
   
-  /*colors for the website above*/
+/*colors for the website above*/
   
-  * {
+* {
     box-sizing: border-box; 
-  }
+}
   
-  body {
+body {
     padding: 0;
-    margin: 0; 
-  }
+    margin: 0;
+}
   
-  h1{ 
+h1{ 
     text-align: center; 
     font-family: Oswald, sans-serif;
-  }
+}
   
-  img {
+img {
     width: 110px; 
-  }
+}
   
-  #navbar {
+#navbar {
     width: 100%; 
     background-color: var(--wedcolor-portafolio1); 
     padding: 0;
@@ -37,26 +37,26 @@
     display: flex; 
     justify-content: flex-end; 
     position: fixed; 
-  }
+}
   
   .nav-list {
     display: flex; 
-  }
+}
   
-  li, a{
+li, a{
     text-decoration: none;  
     list-style: none; 
     color: var(--letter-color);
-  }
+}
   
-  li {
+li {
     margin: 10px; 
     font-family: Nunito, sans-serif; 
-  }
+}
   
-  /* everything about the nav bar above*/
+/* everything about the nav bar above*/
   
-  #welcome-section { 
+#welcome-section { 
     width: 100%;
     height: 100vh; 
     background-color: var(--wedcolor-portafolio2);
@@ -66,33 +66,46 @@
     justify-content: center;
     align-items: center;
     
-  }
+}
   
-  /*all about the welcome section above*/
-  
-  #projects {
-    width: 100%;
-    height: 100vh; 
-    background-color: var(--wedcolor-portafolio5);
-    padding: 0;
+/*all about the welcome section above*/
+
+#projects{
+   
+    background-color: #004e79; 
+    height: 100vh;
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0; 
+    text-align: center;
+}
+
+.title-presentation{
     margin: 0; 
-    display: flex; 
-    justify-content: center; 
-    flex-direction: column; 
-  }
-  
-  .projects-section {
+    padding: 0;
+}
+
+.project-grid{
+    margin: 0 auto; 
+    padding: 0; 
+    text-align: center;
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1rem; 
-    width: 100%;
-    margin: 0 auto;
-    
-  }
-  /*all about the project section above*/
+    grid-template-columns: auto auto;
+}
+
+.project{
+    width: 150px; 
+    height: 150px;
+    border: 4px solid black;
+    background-color: white;
+    margin: 15px; 
+    text-align: center;
+}
+
+/*all about the project section above*/
   
-  @media only screen and (min: 300px) {
+@media only screen and (min: 300px) {
     img {
     width: 110px; 
     }
-  }
+}

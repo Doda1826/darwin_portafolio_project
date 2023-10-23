@@ -4,6 +4,7 @@
     --wedcolor-portafolio3: #004e79;
     --wedcolor-portafolio4: #C9DEF3;
     --wedcolor-portafolio5: #DDE9F5;
+    --wedcolor-portafolio6: #00081d; 
     --letter-color: black; 
 }
   
@@ -85,38 +86,42 @@ li {
 }
 
 .project-grid{ 
-    width: 100%;
-    height: 92%;
+    height: 90%;
     background-color: green;
     display: grid; 
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: stretch;
 }
 
 .project{
     border: 4px solid black;
     background-color: white;
     text-align: center;
+    margin: 1rem;
 }
 
 .p1{
-   grid-row: 1 / span 3;
+   
 }
 
 .p2{
-    grid-row: 2/4;
+    
 }
 
 .p3{
-    grid-row: 1
+    
 }
 
 .p4{
-    grid-column: 1/3;
+    
 }
+
 /*all about the project section above*/
   
-@media only screen and (min: 300px) {
-    img {
-    width: 110px; 
+@media only screen and (min: 150px) {
+    
+    .project {
+        width: 150px;
     }
 }

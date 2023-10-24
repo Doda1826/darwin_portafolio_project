@@ -25,7 +25,8 @@ h1{
 }
   
 img {
-    width: 110px; 
+    width: 100%; 
+    height: 100%;
 }
   
 #navbar {
@@ -85,9 +86,8 @@ li {
     padding: 0;
 }
 
-.project-grid{ 
-    height: 90%;
-    background-color: green;
+.project-grid{  
+    background-color: var(--wedcolor-portafolio3);
     display: grid; 
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
@@ -95,29 +95,41 @@ li {
 }
 
 .project{
-    border: 4px solid black;
+    border: 1px solid black;
     background-color: white;
     text-align: center;
     margin: 1rem;
+    display: grid;
+    grid-template-rows: 70% 30%; 
 }
 
-.p1{
-   
+.esc {
+    border: 1px solid black;
 }
 
-.p2{
-    
+.img-proyect {
+    width: 100%;
+    background-color: aquamarine;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.p3{
-    
-}
-
-.p4{
-    
+.info-proyect{
+    width: 100%;
+    color: var(--wedcolor-portafolio1);
+    background-color: var(--wedcolor-portafolio6);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*all about the project section above*/
+
+#contact{
+    margin: 10%;
+}
   
 @media only screen and (min: 150px) {
     
